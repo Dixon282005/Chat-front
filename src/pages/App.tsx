@@ -4,6 +4,7 @@ import "../styles/App.css";
 
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
+import Lobby  from "./lobby";
 
 function Home() {
   const navigate = useNavigate();
@@ -25,6 +26,7 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/signin" element={<SignIn />} />
       <Route path="/signup" element={<SignUp />} />
+      <Route path="/lobby" element = {<Lobby/>} />
     </Routes>
   );
 }
